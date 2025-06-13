@@ -10,14 +10,12 @@
   "scripts": {
     "dev": "turbo watch dev --filter=@evershop/evershop --filter=agegate",
     "start": "turbo watch start --filter=@evershop/evershop --filter=agegate",
-    "build": "turbo watch build --filter=@evershop/evershop --filter=agegate",
+    "build": "turbo run build --filter=@evershop/evershop --filter=agegate",
     "setup": "evershop install",
     "build-no-compile": "node packages/evershop/dist/bin/build/index.js",
     "start:debug": "node ./packages/evershop/dist/bin/start/index.js --debug",
     "test": "ALLOW_CONFIG_MUTATIONS=true NODE_OPTIONS=--experimental-vm-modules node_modules/jest/bin/jest.js",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx ."
-
-    
   },
   "author": "The Nguyen (https://evershop.io)",
   "license": "GNU GENERAL PUBLIC LICENSE 3.0",
@@ -50,3 +48,4 @@
   },
   "packageManager": "npm@9.6.7"
 }
+
